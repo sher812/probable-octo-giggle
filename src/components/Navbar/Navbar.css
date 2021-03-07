@@ -1,0 +1,87 @@
+.scopeNav {
+    display: flex;
+    background-color: #d6efff;
+    font-family: monospace;
+  }
+  
+  .nameTitle {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 200%;
+  }
+  
+  .listNav {
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 5vh;
+    padding: 2vw;
+    font-family: monospace;
+  }
+  
+  .listNav:hover {
+    background-color: #c6e9ff;
+  }
+  
+  button {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #c6e9ff;
+  }
+  
+  .navBar {
+    width: 100vw;
+    background-color: #d6efff;
+  }
+  
+  .listCollection {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    button {
+      display: block;
+      padding: 2vw;
+      font-size: 3vh;
+      background-color: #afe0ff;
+      border: none;
+  
+      /*outline none removes the default blue border that appears anytime you click on the button*/
+      outline: none;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+  
+    .scopeNav {
+      flex-direction: column;
+    }
+  
+    .listCollection {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .listCollection.active {
+      display: none;
+    }
+  
+    .listNav {
+      margin: 0;
+    }
+  
+    a {
+      display: block;
+    }
+  }
+  
